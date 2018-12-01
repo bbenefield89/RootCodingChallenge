@@ -1,0 +1,34 @@
+{
+  "name": "root",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "build:watch": "webpack --watch",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bbenefield89/RootCodingChallenge.git"
+  },
+  "keywords": [
+    "root",
+    "coding challenge",
+    "car insurance"
+  ],
+  "author": "Brandon Benefield <bsquared18@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bbenefield89/RootCodingChallenge/issues"
+  },
+  "homepage": "https://github.com/bbenefield89/RootCodingChallenge#readme",
+  "dependencies": {
+    "jest": "^23.6.0",
+    "uglifyjs-webpack-plugin": "^2.0.1"
+  },
+  "devDependencies": {
+    "webpack": "^4.26.1",
+    "webpack-cli": "^3.1.2"
+  }
+}
