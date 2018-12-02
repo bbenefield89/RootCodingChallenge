@@ -78,5 +78,4 @@ describe('utils.js', () => {
     const driversSortedInDescOrderByMiles = sortDriversByDistInMilesDescending(hardCodedDriversNotSorted)
     expect(driversSortedInDescOrderByMiles).toEqual(hardCodedDriversNotSorted)
   })
-
 })
