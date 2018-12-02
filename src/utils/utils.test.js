@@ -28,7 +28,7 @@ const hardCodedDriverRecordHash = {
   },
 }
 
-const hardCordedDriversNotSorted = [
+const hardCodedDriversNotSorted = [
   new Driver('Dan'),
   new Driver('Alex'),
   new Driver('Bob')
@@ -60,7 +60,7 @@ describe('utils.js', () => {
       ['12:01', '13:16']
     ]
     let i = 0
-    hardCordedDriversNotSorted.forEach(driver => {
+    hardCodedDriversNotSorted.forEach(driver => {
       driver.setTotalDrivingTimeInHrs(driveTimes[i])
       driver.setTotalDrivingDistInMiles(i++)
       driver.setMilesPerHour()
@@ -69,14 +69,14 @@ describe('utils.js', () => {
     let expectedDriverOutput = 'Dan: 0 miles\n'
     expectedDriverOutput += 'Alex: 1 miles @ 3 mph\n'
     expectedDriverOutput += 'Bob: 2 miles @ 2 mph\n'
-    const driverOutput = getDriversRecordsOutput(hardCordedDriversNotSorted)
+    const driverOutput = getDriversRecordsOutput(hardCodedDriversNotSorted)
     
     expect(driverOutput).toEqual(expectedDriverOutput)
   })
 
   test('sortDriversByDistInMilesDescending -- should return a list of drivers sorted in DESC order by miles', () => {
-    const driversSortedInDescOrderByMiles = sortDriversByDistInMilesDescending(hardCordedDriversNotSorted)
-    expect(driversSortedInDescOrderByMiles).toEqual(hardCordedDriversNotSorted)
+    const driversSortedInDescOrderByMiles = sortDriversByDistInMilesDescending(hardCodedDriversNotSorted)
+    expect(driversSortedInDescOrderByMiles).toEqual(hardCodedDriversNotSorted)
   })
 
 })
