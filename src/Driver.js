@@ -63,11 +63,11 @@ class Driver {
   toString() {
     let driverDescription = ''
     driverDescription += `${ this.__driverName }: `
-    driverDescription += `${ this.__totalDrivingDistInMiles } miles `
+    driverDescription += `${ this.__totalDrivingDistInMiles } miles`
 
     const driverHasTraveled = this.__totalDrivingDistInMiles
     if (driverHasTraveled) {
-      driverDescription += '@ '
+      driverDescription += ' @ '
       driverDescription += `${ this.__milesPerHour } mph`
     }
 
