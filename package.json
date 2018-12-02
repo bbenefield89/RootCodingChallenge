@@ -1,12 +1,17 @@
 {
   "name": "root",
   "version": "1.0.0",
-  "description": "",
+  "engines": {
+    "node": ">=10.14.1",
+    "npm": ">=6.4.1"
+  },
+  "description": "Root Inusrance Code Challenge - https://gist.github.com/dan-manges/1e1854d0704cb9132b74",
   "main": "index.js",
   "scripts": {
     "build": "webpack",
     "build:watch": "webpack --watch",
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "repository": {
     "type": "git",
@@ -24,10 +29,15 @@
   },
   "homepage": "https://github.com/bbenefield89/RootCodingChallenge#readme",
   "dependencies": {
-    "jest": "^23.6.0",
-    "uglifyjs-webpack-plugin": "^2.0.1"
+    "jest": "^23.6.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "uglifyjs-webpack-plugin": "^2.0.1",
     "webpack": "^4.26.1",
     "webpack-cli": "^3.1.2"
   }
